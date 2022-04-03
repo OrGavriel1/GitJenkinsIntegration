@@ -1,0 +1,160 @@
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git init
+Reinitialized existing Git repository in D:/personal/study/Devops/.git/
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    new 1.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myProject.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git add .
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    new 1.py -> myProject.py
+
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git commit -m "add myProject.py"
+[master c7b421d] add myProject.py
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename new 1.py => myProject.py (100%)
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git remote add origin https://github.com/OrGavriel1/GitJenkinsIntegration.git
+error: remote origin already exists.
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git remote add origin https://github.com/OrGavriel1/GitJenkinsIntegration.git
+error: remote origin already exists.
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git remote -v
+origin  https://github.com/OrGavriel1/gitjenkinsintegration.git (fetch)
+origin  https://github.com/OrGavriel1/gitjenkinsintegration.git (push)
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git remote rm origin
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git remote add origin https://github.com/OrGavriel1/GitJenkinsIntegration.git
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 442 bytes | 442.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/OrGavriel1/GitJenkinsIntegration/pull/new/master
+remote:
+To https://github.com/OrGavriel1/GitJenkinsIntegration.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   myProject.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   myProject.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git add .
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   myProject.py
+
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git commit -m "modified myProject.py"
+[master 907eaef] modified myProject.py
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 289 bytes | 289.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/OrGavriel1/GitJenkinsIntegration.git
+   c7b421d..907eaef  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ vim myProject.py
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git add myProject.py
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git commit -m "change to HIT"
+[master 1fa52ff] change to HIT
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 281 bytes | 281.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/OrGavriel1/GitJenkinsIntegration.git
+   907eaef..1fa52ff  master -> master
+
+Or Gavriel@DESKTOP-DS90J59 MINGW64 /d/personal/study/Devops (master)

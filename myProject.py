@@ -1,2 +1,2 @@
-print("Hello HIT")
-print("How are you?")
+print("Hello OR")
+
